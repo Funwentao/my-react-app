@@ -7,7 +7,7 @@ const Link = ({ active, children, onClick }) => {
   }
 
   return (
-    <a href="javascript:;" onClick={e => {
+    <a href="void(0)" onClick={e => {
         e.preventDefault()
         onClick()
       }}
