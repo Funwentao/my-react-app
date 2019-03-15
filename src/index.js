@@ -1,18 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 import {createStore} from 'redux'
 import {Provider} from 'react-redux'
 import './index.css';
-import TodoApp from './views/TodoApp';
+// import TodoApp from './views/TodoApp'
+import AppRouter from './views/TestRouter'
 import todoApp from './store/reducers'
-import * as serviceWorker from './serviceWorker';
+import * as serviceWorker from './serviceWorker'
 
 let store = createStore(todoApp)
 
 
 ReactDOM.render(
   <Provider store={store}>
-    <TodoApp/>
+    <AppRouter/>
   </Provider>,
   document.getElementById('root')  
 )
